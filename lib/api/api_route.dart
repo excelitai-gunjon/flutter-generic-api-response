@@ -1,6 +1,9 @@
 import 'package:dio/dio.dart';
 
-enum APIType { listEmployees, detailsEmployee }
+enum APIType {
+  listEmployees,
+  detailsEmployee,
+}
 
 class APIRoute implements APIRouteConfigurable {
   final APIType type;

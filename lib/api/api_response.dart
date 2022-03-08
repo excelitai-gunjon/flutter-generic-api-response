@@ -7,10 +7,9 @@ typedef Create<T> = T Function();
 ///Construct to get object from generic class
 
 abstract class GenericObject<T> {
+
   Create<Decodable> create;
-
   GenericObject({required this.create});
-
   T genericObject(dynamic data) {
     final item = create();
     return item.decode(data);
